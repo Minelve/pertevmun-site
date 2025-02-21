@@ -1,0 +1,892 @@
+/* Özel Font Tanımlama (Body için) */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/CustomFont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Özel Font Tanımlama (Header & Navbar için) */
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('fonts/HeaderFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* SOCHUM Section */
+.committee-container {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    color: #f6f6f6;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.committee-agenda {
+    font-size: 32px;
+    margin-bottom: 20px;
+    
+}
+
+.committee-title {
+    
+    background-color: #1d1d1d;
+    background-size: cover;
+    background-position: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+
+/* "Study Guide" Button */
+.study-guide-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.study-guide-btn {
+    background: #f6f6f6;
+    color: #1d1d1d;
+    padding: 15px 30px;
+    width: fit-content; /* İçeriğe göre genişlik almasını sağlar */
+    border: none;
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 999px;
+    position: relative;
+    transition: 0.3s;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    display: inline-block; /* Buton gibi görünmesini sağlar */
+}
+
+.study-guide-btn:hover {
+    background: #1d1d1d;
+    color: #f6f6f6;  
+}
+
+.study-guide-btn:hover {
+    background-color: #1d1d1d;
+}
+
+
+/* Committees Section */
+.committees-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.committees-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.committee-box {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.committee-box img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.committees-section h2 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f6f6f6; /* Başlık rengi */
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .committee-box {
+        width: 45%;
+    }
+
+    .committees-section h2 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #f6f6f6; /* Başlık rengi */
+        padding-top: 50px;
+        padding-bottom: 20px;
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .committee-box {
+        width: 100%;
+    }
+}
+
+
+
+.apply-section {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.apply-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.apply-box {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.apply2-btn {
+    background-color: #f6f6f6;
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'MyCustomFont', sans-serif;
+    font-style: italic;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.apply2-btn.multiline {
+    white-space: pre-line;
+}
+
+.apply2-btn:hover {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #f6f6f6;
+}
+
+.apply-section h2 {
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 100px;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+/* Genel Stiller */
+body {
+    font-family: 'MyCustomFont', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f6f6f6;
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header ve Navbar - Farklı Font */
+header, nav {
+    font-family: 'HeaderFont', sans-serif;
+    font-size: 25px;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between; /* Sol ve sağa yapıştırır */
+    align-items: center;
+    padding: 15px 20px;
+    background: #1d1d1d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+/* Navbar'ı 50px sola kaydır */
+nav {
+    margin-right: 50px; /* -50px olan kısmı kaldırdım */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+/* Menü Butonu (Mobil için) */
+.menu-toggle {
+    display: none;
+    background: none;
+    color: #f6f6f6;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Aralarındaki boşluğu düzenler */
+}
+
+nav ul li a {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+/* Hero Bölümü */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    padding-top: 150px;
+    text-align: left;
+    background-size: cover;
+    min-height: 500px;
+}
+
+/* PertevMUN’25 */
+.hero h2 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* 18, 19 & 20th of April 2025 */
+.hero p {
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    margin: 10px 0;
+    position: relative;
+    bottom: 20px;
+}
+
+/* #PressRewind */
+.hero h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    position: relative;
+    bottom: 30px;
+}
+
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 20px; /* Aşağıdan boşluk ekleyerek yukarı taşır */
+    position: relative;
+    top: -20px; /* Yukarı taşıma miktarını ayarla */
+}
+
+/* Timer Box - Kare & %80 Kıvrımlı Köşeler */
+.timer-box {
+    background: #1d1d1d;
+    padding: 30px;
+    border-radius: 70px;
+    text-align: center;
+    width: 470px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Timer Font Stili */
+.timer-box p {
+    font-size: 30px;
+    font-weight: normal;
+    position: relative;
+    top: 0px; /* Countdown başlığını yukarı taşır */
+}
+
+
+.timer-box h3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: -50px; /* Sayaç metnini yukarı taşır */
+    font-size: 35px;
+}
+
+.timer-box h5 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: -32px;
+    font-size: 35px;
+}
+
+.timer-box button {
+    margin-top: 10px; /* Butonlar arasına boşluk bırakır */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Butonları ortalar */
+    gap: 20px; /* Butonlar arasındaki boşluğu ayarlar */
+    margin-top: 15px;
+}
+
+.custom-btn {
+    background: #f6f6f6;
+    color: #1d1d1d;
+    padding: 15px 30px;
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: 0.3s;
+    position: relative;
+    height: auto;
+    overflow: hidden; /* Resmin butonun dışına taşmasını engeller */
+    top: -35px;
+    text-decoration: none; /* Altı çizili kaldır */
+    display: flex; /* Buton görünümünü korumak için */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    
+
+}
+
+.custom-btn:hover {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover; /* Resmin butona tam oturmasını sağlar */
+    color: #f6f6f6;
+}
+
+.timer-box .buttons {
+    display: flex;
+    flex-wrap: wrap; /* Butonlar taşarsa alt satıra geçsin */
+    justify-content: center;
+    gap: 10px; /* Butonlar arasında boşluk bırak */
+}
+
+.timer-box .custom-btn {
+    flex: 1 1 45%; /* Butonlar taşmadan kutunun içinde kalacak */
+    max-width: 200px; /* Maksimum genişliği belirle */
+}
+
+.timer-box::after {
+    content: "";
+    position: absolute;
+    top: 30%;  /* Çizgiyi ortalamak için */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f6f6f6;
+    transform: translateY(-50%);
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* İki kutu arasındaki boşluk */
+}
+
+/* Apply Now Butonu - Daha Büyük ve Maksimum Kıvrımlı */
+.apply-btn {
+    background: #f6f6f6;
+    color: #1d1d1d;
+    padding: 15px 30px;
+    width: fit-content; /* İçeriğe göre genişlik almasını sağlar */
+    border: none;
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    margin-top: 40px;
+    border-radius: 999px;
+    position: relative;
+    top: 29px;
+    transition: 0.3s;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    display: inline-block; /* Buton gibi görünmesini sağlar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apply-btn:hover {
+    background: #1d1d1d;
+    color: #f6f6f6;  
+}
+
+/* Letter Container (Tek Letter) */
+
+.letters-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    background: #1d1d1d; /* Arkaplanı siyah yap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Tek Letter Kutusu - Kare & %80 Kıvrımlı Köşeler */
+.letter {
+    padding: 30px;
+    border-radius: 100px;
+    width: 750px;
+    height: 750px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    color: #f6f6f6;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* Footer */
+footer {
+
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.schedule {
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.schedule h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #f6f6f6;
+}
+
+.schedule-title {
+    font-size: 64px;
+    text-align: center;
+}
+
+.schedule-box h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.schedule-box h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.schedule-box p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 5px 0;
+}
+
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 10%;
+    flex-wrap: wrap;
+    background: #1d1d1d;
+    background-size: cover;
+    background-position: center;        
+    overflow: hidden;
+}
+
+
+.schedule-container div {
+    width: 100%;
+    text-align: center;
+}
+
+
+.schedule-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    height: 500px;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    border-radius: 70px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.fee-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.fee-title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.fee-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.fee-box {
+    background: #1d1d1d;
+    border-radius: 70px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px; /* Kenarlarda boşluk bırakıldı */
+    border-radius: 90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.fee-box h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+.fee-box p {
+    font-size: 20px;
+    margin-bottom: 2px; /* Satır aralığı azaltıldı */
+}
+
+.fee-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.venue-container {
+    text-align: center;
+    margin-top: 80px;
+    align-items: stretch; /* Kutuların yüksekliklerini eşitler */
+    background-color: #1d1d1d;
+    
+}
+
+.venue-container .section-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.venue-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.venue-box {
+    background: url('background.jpg') no-repeat center center fixed;
+    color: #f6f6f6;
+    padding: 30px;
+    border-radius: 90px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.venue-box h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.venue-box p {
+    font-size: 20px;
+}
+
+.venue-map {
+    width: 900px;
+    min-height: 300px;
+    display: flex;
+    align-items: stretch; /* Kutunun yüksekliğini harita içeriğine uygula */
+    overflow: hidden;
+    padding-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.venue-map iframe {
+    width: 100%;
+    height: 100%; /* İframe'in tam oturmasını sağlar */
+    border-radius: 90px; /* İframe içinde de keskinliği sağlar */
+    min-height: 300px;
+    display: block
+}
+/* Mobil uyumluluk - Küçük ekranlarda kutuların alt alta gelmesi */
+
+@media (max-width: 1024px) {
+    .schedule-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .schedule-box {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Daha küçük mobil cihazlar (telefonlar için) */
+@media (max-width: 600px) {
+    .schedule h2 {
+        font-size: 40px;
+    }
+
+    .schedule-box {
+        max-width: 90%;
+        padding: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .apply-section h2 {
+        font-size: 40px; /* Başlık için daha küçük font */
+    }
+
+    .schedule-box h3 {
+        font-size: 40px;
+    }
+
+    .schedule-box p {
+        font-size: 24px;
+    }
+}
+
+/* Responsive Tasarım */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: relative;
+        left: -40px;
+    }
+
+    .schedule-box h3 {
+        font-size: 32px; /* Başlık için daha küçük font */
+    }
+
+    .apply-section h2 {
+        font-size: 32px; /* Başlık için daha küçük font */
+    }
+
+    .schedule-box p {
+        font-size: 20px; /* Metin için daha küçük font */
+    }
+
+    .committee-agenda {
+        font-size: 20px; /* Başlık için daha küçük font */
+    }
+
+    .committee-title {
+        font-size: 32px; /* Başlık için daha küçük font */
+    }
+
+    .committee-container {
+        font-size: 20px; /* Metin için daha küçük font */
+        max-width: 90%;
+    }
+
+    .schedule-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fee-boxes {
+        flex-direction: column; /* Mobilde alt alta dizilim */
+        align-items: center;
+    }
+
+    nav {
+        max-height: 0;
+        opacity: 1;
+        transform: translateY(-20px);
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        top: 100%; /* Menü butonunun hemen altında başlasın */
+        left: 0;
+        width: 100%;
+        background: #1d1d1d; /* Arka planı menüyle aynı olsun */
+        text-align: left;
+        z-index: 999;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        padding-left: 15px;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav.active {
+        max-height: 320px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .custom-btn {
+        font-size: 16px; /* Click to See butonunun yazısını küçült */
+        padding: 10px 20px; /* Butonu da küçült */
+    }
+
+    .timer-box h3 {
+        font-size: 30px; /* Countdown yazısının fontunu küçült */
+    }
+
+    .timer-box h5 {
+        font-size: 30px; /* Countdown yazısının fontunu küçült */
+        position: relative;
+        top: -34px;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .letters-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .letter {
+        width: 80%;
+        height: auto;
+    }
+
+    .timer-box {
+        width: 300px;
+        padding: 25px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .apply-btn {
+        margin-bottom: 20px; /* Butonun altına ekstra boşluk ekler */
+    }
+
+    .timer-box {
+        margin-top: 30px; /* Timer kutusunun üstüne ekstra boşluk ekler */
+    }
+
+    .apply-box-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
