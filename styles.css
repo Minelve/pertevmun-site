@@ -15,6 +15,36 @@
     font-style: normal;
 }
 
+.sponsor-section {
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: transparent;
+}
+
+.sponsor-section h2 {
+
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 100px;
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.sponsor-logos img {
+    height: 180px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+
 /* SOCHUM Section */
 .committee-container {
     background-size: cover;
